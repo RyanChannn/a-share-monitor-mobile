@@ -1,6 +1,8 @@
 name: Refresh and deploy
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '0 3 * * 1-5'
@@ -44,4 +46,3 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
