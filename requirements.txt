@@ -1,9 +1,8 @@
-# A股风险监视器 依赖
-# 安装：python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
-akshare>=1.18.88
+# A股风险监视器依赖
+# 固定到本机验证过的版本，避免上游改名导致定时抓取失效。
+akshare==1.18.97
 pandas>=2.0
 requests>=2.31
 curl_cffi>=0.7
 lxml>=5.0
 beautifulsoup4>=4.12
-
